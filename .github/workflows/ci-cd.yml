@@ -1,0 +1,15 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to main
+
+jobs:
+  trigger-jenkins:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Webhook to Jenkins
+        run: |
+          curl -X POST https://your-jenkins-server/job/GitHub-CI-CD/build \
+          --user your-username:your-api-token
