@@ -1,4 +1,3 @@
-# flask-ci-cd# Testing Jenkins CI/CD
 # CI/CD Pipeline Setup with GitHub Actions & Jenkins
 
 ## Overview
